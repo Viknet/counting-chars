@@ -23,13 +23,7 @@ int main(int argc, char **argv) {
         ptr = &fps_count_naive;
         break;
     case 'c':
-        ptr = &fps_count_cmpestrm;
-        break;
-    case '2':
-        ptr = &fps_count_avx2;
-        break;
-    case 'd':
-        ptr = &fps_count;
+        ptr = &fps_count_neon;
         break;
     }
 
